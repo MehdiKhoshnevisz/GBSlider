@@ -38,7 +38,7 @@ These instructions will get you a copy of the project up and running on your loc
     </div>
   </div>
 ```
-> And then you can run sliders from this way 
+> And then you can run sliders
 ```javascript
 <script type="text/javascript">
   // Run Sliders
