@@ -1,0 +1,134 @@
+
+.Horizontal-slider .slider{
+  width: 100%;
+}
+.Horizontal-slider .items{
+  overflow-x: hidden;
+  width: 90%;
+  height: 250px;
+  margin: auto;
+  border: 3px solid #ddd;
+  border-radius: 3px;
+  position: relative;
+  transition: all 0.3s linear;
+}
+.Horizontal-slider .item-slider{
+  position: absolute;
+  width:33.33333333333333%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.slider5 .items{
+  width:33.33333333333333% !important;
+}
+.slider5 .item-slider{
+  width:100% !important;
+}
+.Horizontal-slider .item-slider img{
+  width: 100%;
+  vertical-align: middle;
+  height: 100%;
+}
+.Horizontal-slider .btns{
+  margin:10px auto;
+  text-align: center;
+}
+.Horizontal-slider .btns > button{
+  background: rgb(47, 47, 47);
+  border:none;
+  padding: 3px 10px;
+  cursor: pointer;
+  color: white;
+  font-family: cursive;
+  border-radius: 3px;
+  outline: none;
+}
+.Horizontal-slider .btns > button:active{
+  background: rgb(82, 210, 133);
+}
+.Horizontal-slider .content{
+  cursor: pointer;
+  position: absolute;
+  left:0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  transition: all 0.8s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+
+}
+
+.dots {
+  text-align: center;
+  margin: 10px 0;
+}
+.dots span{
+  cursor: pointer;
+  width: 30px;
+  height: 10px;
+  border-radius: 50px;
+  border: 2px solid rgb(82, 210, 133);
+  background: #ffffff;
+  display: inline-block;
+  margin: 3px 5px;
+  text-align: center;
+  transition: all 0.3s ease-out;
+}
+.active{
+  background:rgb(82, 210, 133) !important;
+}
+
+
+hr{
+  border: 1px solid #ececec;
+  margin: 50px 0;
+}
+.slidername{
+
+  width: 90%;
+  border-radius: 3px;
+
+  margin: auto;
+  padding: 1px;
+  margin-bottom: 50px;
+}
+.slidername h2{
+  color:#52d285;
+  text-align: center;
+  margin: 50px auto;
+  font-family: monospace;
+  font-size: 30px;
+  animation:title_anim 1.5s infinite;
+}
+@keyframes title_anim {
+  0%{
+    color:#52d285;
+    transform:translate3d(10px,20px,30px);
+  }
+  50%{
+    color: #2196f3;
+    transform:translate3d(10px,40px,50px);
+  }
+  100%{
+    color:#52d285;
+    transform:translate3d(10px,20px,30px);
+  }
+}
+@media only screen and (max-width:1080px){
+  .item-slider{
+    width:33.33333333333333% !important;
+  }
+}
+@media only screen and (max-width:768px){
+  .item-slider{
+    width:50% !important;
+  }
+  .slider5 .items{
+    width:90% !important;
+  }
+}
+@media only screen and (max-width:500px){
+  .item-slider{
+    width:100% !important;
+  }
+}

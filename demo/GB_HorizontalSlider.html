@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <title>GeekBoy Slider</title>
+</head>
+<body>
+
+
+  <div class="slidername">
+    <h2>
+      GeekBoy Slider
+    </h2>
+  </div>
+
+  <!-- Slider1 -->
+  <div class="Horizontal-slider slider1">
+    <div class="items">
+      <div class="content" id="draggable1" >
+        <div class="item-slider"><img src="img/frontend.png" alt=""></div>
+        <div class="item-slider"><img src="img/geekboy.jpg" alt=""></div>
+        <div class="item-slider"><img src="img/frontend.png" alt=""></div>
+        <div class="item-slider"><img src="img/geekboy.jpg" alt=""></div>
+        <div class="item-slider"><img src="img/frontend.png" alt=""></div>
+      </div>
+    </div>
+    <div class="dots"></div>
+    <div class="btns">
+      <button class="first" type="button" name="button">first</button>
+      <button class="prev" type="button" name="button">prev</button>
+      <button class="next" type="button" name="button">next</button>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Slider2 -->
+  <div class="Horizontal-slider slider2">
+    <div class="items">
+      <div class="content">
+        <div class="item-slider"><img src="img/frontend.png" alt=""></div>
+        <div class="item-slider"><img src="img/geekboy.jpg" alt=""></div>
+        <div class="item-slider"><img src="img/frontend.png" alt=""></div>
+        <div class="item-slider"><img src="img/geekboy.jpg" alt=""></div>
+        <div class="item-slider"><img src="img/frontend.png" alt=""></div>
+        <div class="item-slider"><img src="img/geekboy.jpg" alt=""></div>
+        <div class="item-slider"><img src="img/frontend.png" alt=""></div>
+      </div>
+    </div>
+    <div class="btns">
+      <button class="first" type="button" name="button">first</button>
+      <button class="prev" type="button" name="button">prev</button>
+      <button class="next" type="button" name="button">next</button>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Slider3 -->
+  <div class="Horizontal-slider slider3">
+    <div class="items">
+      <div class="content">
+        <div class="item-slider"><img src="img/frontend.png" alt=""></div>
+        <div class="item-slider"><img src="img/geekboy.jpg" alt=""></div>
+        <div class="item-slider"><img src="img/frontend.png" alt=""></div>
+        <div class="item-slider"><img src="img/geekboy.jpg" alt=""></div>
+        <div class="item-slider"><img src="img/frontend.png" alt=""></div>
+        <div class="item-slider"><img src="img/geekboy.jpg" alt=""></div>
+        <div class="item-slider"><img src="img/frontend.png" alt=""></div>
+      </div>
+    </div>
+    <div class="dots"></div>
+  </div>
+
+  <hr>
+
+  <!-- Slider14-->
+  <div class="Horizontal-slider slider4">
+    <div class="items">
+      <div class="content">
+        <div class="item-slider"><img src="img/frontend.png" alt=""></div>
+        <div class="item-slider"><img src="img/geekboy.jpg" alt=""></div>
+        <div class="item-slider"><img src="img/frontend.png" alt=""></div>
+        <div class="item-slider"><img src="img/geekboy.jpg" alt=""></div>
+        <div class="item-slider"><img src="img/frontend.png" alt=""></div>
+        <div class="item-slider"><img src="img/geekboy.jpg" alt=""></div>
+        <div class="item-slider"><img src="img/frontend.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Slider5 -->
+  <div class="Horizontal-slider slider5">
+    <div class="items">
+      <div class="content">
+        <div class="item-slider"><img src="img/frontend.png" alt=""></div>
+        <div class="item-slider"><img src="img/geekboy.jpg" alt=""></div>
+        <div class="item-slider"><img src="img/frontend.png" alt=""></div>
+        <div class="item-slider"><img src="img/geekboy.jpg" alt=""></div>
+        <div class="item-slider"><img src="img/frontend.png" alt=""></div>
+        <div class="item-slider"><img src="img/geekboy.jpg" alt=""></div>
+        <div class="item-slider"><img src="img/frontend.png" alt=""></div>
+      </div>
+    </div>
+    <div class="dots"></div>
+  </div>
+
+
+
+
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/GB_HorizontalSlider.js"></script>
+  <script type="text/javascript">
+  // Run Sliders
+  var slider1 = new GB_Horizontal(".slider1");
+  slider1.setParts(3);
+  slider1.setDots();
+
+  var slider2 = new GB_Horizontal(".slider2");
+  slider2.setParts(3);
+
+  var slider3 = new GB_Horizontal(".slider3");
+  slider3.setParts(3);
+  slider3.setDots();
+
+  var slider4 = new GB_Horizontal(".slider4");
+  slider4.setParts(3);
+  slider4.timer(1500);
+
+  var slider5 = new GB_Horizontal(".slider5");
+  slider5.setParts(1);
+  slider5.setDots();
+  slider5.timer(1500);
+
+  </script>
+
+</body>
+</html>
+<!-- GeekBoy Slider -->
